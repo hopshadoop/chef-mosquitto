@@ -31,10 +31,14 @@ default['mosquitto']['retained_persistence'] = "true"
 default['mosquitto']['require_certificate'] = "false"
 
 default['mosquitto']['bridges'] = []
-default['mosquitto']['listeners'] = []
+default['mosquitto']['listeners'] = [] # 
 
 default['mosquitto']['pid_file'] = '/var/run/mosquitto.pid'
 
 default['mosquitto']['include_dir'] = '/etc/mosquitto/conf.d'
 
 default['mosquitto']['user'] = 'mosquitto'
+
+default['mosquitto']['client']['private_ips']     = ['']
+default['mosquitto']['server']['private_ips']     = ['']
+default['mosquitto']['default']['private_ips']    = ['']
